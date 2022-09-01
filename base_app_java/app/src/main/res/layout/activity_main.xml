@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible"
+    android:orientation="vertical"
+    android:backgroundTint="@color/cardview_dark_background">
+
+    <Button
+        android:id="@+id/btnUnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:text="Nova obavijest"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="POGLEDAJ OBAVIJESTI"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPrikazSve"
+        android:layout_marginTop="50dp"
+        android:text="UPRAVLJAJ OBAVIJESTIMA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnAzuriranje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUnos"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:text="Izmijeni obavijest"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnObrisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAzuriranje"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:text="Brisanje obavijesti"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnPrikazDanas"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:text="Danas"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnPrikazMjesec"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/btnPrikazDanas"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:text="mjesec"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnPrikazGodina"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPrikazDanas"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:text="godina"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnPrikazSve"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPrikazMjesec"
+        android:layout_toEndOf="@+id/btnPrikazDanas"
+        android:backgroundTint="@color/white"
+        android:padding="10sp"
+        android:layout_marginLeft="6dp"
+        android:text="sve"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

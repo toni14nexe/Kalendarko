@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textUpitnik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Želite li stvarno obrisati ?"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/obrisiBTN"
+        android:layout_width="match_parent"
+        android:textSize="35dp"
+        android:backgroundTint="@color/red"
+        android:text="Obriši"
+        android:layout_height="80dp"
+        android:layout_margin="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/odustaniBTN" />
+
+    <Button
+        android:id="@+id/odustaniBTN"
+        android:layout_width="match_parent"
+        android:textSize="35dp"
+        android:backgroundTint="@color/green"
+        android:text="Odustani"
+        android:layout_height="80dp"
+        android:layout_margin="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

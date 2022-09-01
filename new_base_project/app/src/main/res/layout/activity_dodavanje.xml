@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Dodavanje"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="20dp" >
+
+    <CalendarView
+        android:id="@+id/kalendarUnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kalendarUnos"
+        android:layout_marginTop="-30dp"
+        android:hint="Naziv događaja"
+        android:inputType="textShortMessage"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event"
+        android:layout_centerHorizontal="true"
+        android:hint="Opis događaja"
+        android:inputType="textShortMessage"
+        android:textAlignment="center"
+        android:textSize="18dp"/>
+
+    <Switch
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Svake godine"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/tipkaUnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="200dp"
+        android:onClick="InsertDatabase"
+        android:text="Spremi"
+        android:backgroundTint="@color/teal_200"/>
+
+</RelativeLayout>
